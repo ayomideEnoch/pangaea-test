@@ -4,7 +4,7 @@ import { ProductContext } from "../contexts/ProductContext";
 import { IProduct } from "../utils/interfaces";
 
 const useCart = () => {
-  const { cartItems, dispatch, currency } = useContext(CartContext);
+   const { cartItems, dispatch, currency } = useContext(CartContext);
   const { getProducts } = useContext(ProductContext);
 
   const doAddItem = (product: IProduct) => {

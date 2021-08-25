@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { ReactComponent as SvgDropdown } from "../../../assets/svg/dropdown.svg";
 import useCart from "../../../hooks/useCart";
 import useConfig from "../../../hooks/useConfig";
 const Header: FC<{}> = () => {
@@ -24,17 +23,11 @@ const Header: FC<{}> = () => {
               />
             </div>
           </a>
-          <a className="header--link--item" href="#header--item">
-            Belanja
+          <a className="header--link--item" href="#shop">
+            Shop
           </a>
-          <a className="header--link--item" href="#header--item">
-            About
-          </a>
-          <a className="header--link--item" href="#header--item">
-            Support
-          </a>
-          <a className="header--link--item" href="#header--item">
-            Blog
+          <a className="header--link--item" href="#learn">
+            Learn
           </a>
         </div>
         <div className="header--content--right">
@@ -57,26 +50,6 @@ const Header: FC<{}> = () => {
             />
             <p className="cart--item--counter">{cartItems.length}</p>
           </a>
-          <div className="language--select--wrapper">
-            <select className="language--select">
-              <option value="ar">AR</option>
-              <option value="fr">FR</option>
-              <option value="en">EN</option>
-              <option value="es">ES</option>
-              <option value="de">DE</option>
-              <option value="he">HE</option>
-              <option value="id">ID</option>
-              <option value="zh-TW">ZH-TW</option>
-              <option value="pt">PT</option>
-              <option value="th">TH</option>
-              <option value="da">DA</option>
-              <option value="ja">JA</option>
-              <option value="ko">KO</option>
-            </select>
-            <div className="language--select--dropdown">
-              <SvgDropdown />
-            </div>
-          </div>
         </div>
       </div>
     </StyledHeader>
